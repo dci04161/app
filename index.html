@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2563eb">
+<title>오픽 연습</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="backBtn" class="icon-btn" aria-label="뒤로">←</button>
+  <h1 id="title">오픽 연습</h1>
+  <a href="#/settings" class="icon-btn" aria-label="설정">⚙</a>
+</header>
+<main id="view"></main>
+<nav class="tabbar">
+  <a href="#/" data-tab="home">홈</a>
+  <a href="#/practice" data-tab="practice">연습</a>
+  <a href="#/history" data-tab="history">기록</a>
+  <a href="#/weak" data-tab="weak">약점</a>
+  <a href="#/vocab" data-tab="vocab">단어장</a>
+</nav>
+<div id="sheet" class="sheet hidden" role="dialog" aria-modal="true">
+  <div class="sheet-backdrop"></div>
+  <div class="sheet-panel"><div id="sheetBody"></div></div>
+</div>
+<button id="phraseBtn" class="phrase-btn hidden">선택한 표현 조회</button>
+<div id="toast" class="toast hidden"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
